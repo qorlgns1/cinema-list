@@ -14,7 +14,7 @@
     <header class="container-header">
       <h1>정글 시네마 영화 목록</h1>
       <nav>
-        <ul class="list-movie">
+        <ul class="list-selectmovies">
           <li>
             <button class="selected" type="button">현재상영영화</button>
           </li>
@@ -27,49 +27,282 @@
         </ul>
       </nav>
     </header>
-    <!-- <main>
-    <ul>
-      <li>
-        <img src="./src/images/영화목록페이지/포스터_위니브월드.png" alt="위니브월드 포스터 이미지">
-        <strong>위니브 월드 : 새로운 시대</strong>
-        <ul>
-          <li>
-            <dl>
-              <dt>개요</dt>
-              <dd>판타지</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>평점</dt>
-              <dd>9.05</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>개봉</dt>
-              <dd>2021.03.27</dd>
-            </dl>
-          </li>
-          <li>
-            <dl>
-              <dt>출연</dt>
-              <dd>라이캣,소울곰,개리씨</dd>
-            </dl>
-          </li>
-        </ul>
-        <button type="button">예매하기</button>
-        <button type="button">예고편</button>
-      </li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </main> -->
+    <main class="container-main">
+      <ul class="list-moviesinfo">
+        <li class="movieinfo">
+          <img src="./src/images/영화목록페이지/포스터_위니브월드.png" alt="위니브 월드 : 새로운 시대 포스터 이미지">
+          <strong class="text-title">위니브 월드 : 새로운 시대</strong>
+          <ul class="list-movieinfo_details">
+            <li>
+              <dl>
+                <dt>개요</dt>
+                <dd>판타지</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>평점</dt>
+                <dd>9.05</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개봉</dt>
+                <dd>2021.03.27</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>출연</dt>
+                <dd>라이캣, 소울곰, 개리씨</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="buttons-movieinfo">
+            <button type="button">예매하기</button>
+            <button type="button">예고편</button>
+          </div>
+        </li>
+        <li class="movieinfo">
+          <img src="./src/images/영화목록페이지/포스터_눈떠보니자바.png" alt="눈떠보니 코딩테스트 전날 포스터 이미지">
+          <strong class="text-title">눈떠보니 코딩테스트 전날</strong>
+          <ul class="list-movieinfo_details">
+            <li>
+              <dl>
+                <dt>개요</dt>
+                <dd>스틸러</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>평점</dt>
+                <dd>8.25</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개봉</dt>
+                <dd>2021.04.01</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>출연</dt>
+                <dd>자바독, 개리씨, 빙키</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="buttons-movieinfo">
+            <button type="button">예매하기</button>
+            <button type="button">예고편</button>
+          </div>
+        </li>
+        <li class="movieinfo">
+          <img src="./src/images/영화목록페이지/포스터_부트캠프.jpg" alt="파이썬 부트캠프 포스터 이미지">
+          <strong class="text-title">파이썬 부트캠프</strong>
+          <ul class="list-movieinfo_details">
+            <li>
+              <dl>
+                <dt>개요</dt>
+                <dd>드라마</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>평점</dt>
+                <dd>8.77</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개봉</dt>
+                <dd>2021.04.12</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>출연</dt>
+                <dd>캣, 파이, 썬, 뮤라</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="buttons-movieinfo">
+            <button type="button">예매하기</button>
+            <button type="button">예고편</button>
+          </div>
+        </li>
+        <li class="movieinfo">
+          <img src="./src/images/영화목록페이지/포스터_파이큐티.png" alt="파이큐티의 사랑 포스터 이미지">
+          <strong class="text-title">파이큐티의 사랑</strong>
+          <ul class="list-movieinfo_details">
+            <li>
+              <dl>
+                <dt>개요</dt>
+                <dd>로맨스</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>평점</dt>
+                <dd>8.81</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개봉</dt>
+                <dd>2021.04.08</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>출연</dt>
+                <dd>파이썬, 큐티</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="buttons-movieinfo">
+            <button type="button">예매하기</button>
+            <button type="button">예고편</button>
+          </div>
+        </li>
+        <li class="movieinfo">
+          <img src="./src/images/영화목록페이지/포스터_앤진액스.png" alt="NGINX의 춤 포스터 이미지">
+          <strong class="text-title">NGINX의 춤</strong>
+          <ul class="list-movieinfo_details">
+            <li>
+              <dl>
+                <dt>개요</dt>
+                <dd>드라마</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>평점</dt>
+                <dd>9.88</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개봉</dt>
+                <dd>2021.04.15</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>출연</dt>
+                <dd>NGIN, 노션</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="buttons-movieinfo">
+            <button type="button">예매하기</button>
+            <button type="button">예고편</button>
+          </div>
+        </li>
+        <li class="movieinfo">
+          <img src="./src/images/영화목록페이지/포스터_어쩌다밋업.png" alt="어쩌다 밋업 포스터 이미지">
+          <strong class="text-title">어쩌다 밋업</strong>
+          <ul class="list-movieinfo_details">
+            <li>
+              <dl>
+                <dt>개요</dt>
+                <dd>드라마</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>평점</dt>
+                <dd>9.25</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개봉</dt>
+                <dd>2021.04.17</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>출연</dt>
+                <dd>라이캣, 자바독, 소울곰</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="buttons-movieinfo">
+            <button type="button">예매하기</button>
+            <button type="button">예고편</button>
+          </div>
+        </li>
+        <li class="movieinfo">
+          <img src="./src/images/영화목록페이지/포스터_파이게임.jpg" alt="파이게임 어드벤처 포스터 이미지">
+          <strong class="text-title">파이게임 어드벤처</strong>
+          <ul class="list-movieinfo_details">
+            <li>
+              <dl>
+                <dt>개요</dt>
+                <dd>판타지액션</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>평점</dt>
+                <dd>8.56</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개봉</dt>
+                <dd>2021.04.05</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>출연</dt>
+                <dd>개리씨, 파이썬</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="buttons-movieinfo">
+            <button type="button">예매하기</button>
+            <button type="button">예고편</button>
+          </div>
+        </li>
+        <li class="movieinfo">
+          <img src="./src/images/영화목록페이지/포스터_MBIT.png" alt="MBIT는 내 운명 포스터 이미지">
+          <strong class="text-title">MBIT는 내 운명</strong>
+          <ul class="list-movieinfo_details">
+            <li>
+              <dl>
+                <dt>개요</dt>
+                <dd>로맨스</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>평점</dt>
+                <dd>9.02</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>개봉</dt>
+                <dd>2021.04.12</dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>출연</dt>
+                <dd>라이캣, 개리씨, 자바독</dd>
+              </dl>
+            </li>
+          </ul>
+          <div class="buttons-movieinfo">
+            <button type="button">예매하기</button>
+            <button type="button">예고편</button>
+          </div>
+        </li>
+      </ul>
+    </main>
   </div>
 </body>
 

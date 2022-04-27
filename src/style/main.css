@@ -1,0 +1,102 @@
+.container-main {
+  border: 2px solid #bdbdbd;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 24px 25px 28px 25px;
+}
+
+.list-moviesinfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.movieinfo {
+  /* padding: 18px 19px 0px; */
+  width: 220px;
+  height: 441px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #bdbdbd;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+  background-color: white;
+}
+
+.movieinfo > img:first-child {
+  margin: 18px 19px 11px;
+  width: 180px;
+  height: 250px;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+.movieinfo > .text-title {
+  margin: 0 19px 12px;
+  display: block;
+  font-family: "Noto Sans KR";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.list-movieinfo_details {
+  margin: 0 19px 15px;
+}
+
+.list-movieinfo_details dl,
+.list-movieinfo_details dt,
+.list-movieinfo_details dd {
+  display: inline;
+  font-family: "Noto Sans KR";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.list-movieinfo_details dt {
+  color: #828282;
+}
+
+.list-movieinfo_details > li:first-child {
+  display: inline-block;
+}
+
+.list-movieinfo_details > li:nth-child(2) {
+  float: right;
+}
+
+.list-movieinfo_details > li:nth-child(3),
+.list-movieinfo_details > li:nth-child(4) {
+  margin-top: 5px;
+}
+
+.buttons-movieinfo > button:first-child {
+  padding: 11px 28px 12px 31px;
+  border-top: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+  border-radius: 0 0 0 10px;
+}
+
+.buttons-movieinfo > button:last-child::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/영화목록페이지/아이콘_재생.png);
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+.buttons-movieinfo > button:last-child {
+  padding: 11px 30px 10px 29px;
+  border-top: 1px solid #bdbdbd;
+  border-radius: 0 0 0 10px;
+  margin-left: -4px;
+}
