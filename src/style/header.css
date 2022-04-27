@@ -15,14 +15,14 @@
   border-top: 2px solid #bdbdbd;
 }
 
-.container-header .list-movie {
+.container-header .list-selectmovies {
   margin-bottom: 28px;
   padding: 0 342px 0 344px;
   display: flex;
   justify-content: space-between;
 }
 
-.list-movie > li > button {
+.list-selectmovies > li > button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -31,7 +31,7 @@
   color: #828282;
 }
 
-.list-movie > li > .selected {
+.list-selectmovies > li > .selected {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
