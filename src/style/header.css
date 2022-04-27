@@ -1,0 +1,41 @@
+.container-header > h1 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #000000;
+}
+
+.container-header > h1::after {
+  content: "";
+  display: block;
+  margin: 36px auto 27px;
+  width: 650px;
+  border-top: 2px solid #bdbdbd;
+}
+
+.container-header .list-movie {
+  margin-bottom: 28px;
+  padding: 0 342px 0 344px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-movie > li > button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #828282;
+}
+
+.list-movie > li > .selected {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
