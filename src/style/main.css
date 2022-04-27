@@ -86,7 +86,7 @@
 .buttons-movieinfo > button:last-child::before {
   content: "";
   display: inline-block;
-  background-image: url(../images/영화목록페이지/아이콘_재생.png);
+  background-image: url(../images/movie_list/icon-play.png);
   width: 15px;
   height: 15px;
   background-size: cover;
