@@ -13,9 +13,7 @@
 }
 
 .movieinfo {
-  /* padding: 18px 19px 0px; */
   width: 220px;
-  height: 441px;
   position: relative;
   box-sizing: border-box;
   border: 1px solid #bdbdbd;
