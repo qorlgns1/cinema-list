@@ -1,0 +1,30 @@
+.container-header {
+  > h1 {
+    @include font-property("Roboto", 24px, 700, black, 28px);
+    text-align: center;
+    &::after {
+      content: "";
+      display: block;
+      margin: 36px auto 27px;
+      width: 650px;
+      border-top: 2px solid $main-color;
+    }
+  }
+
+  .list-selectmovies {
+    margin-bottom: 28px;
+    padding: 0 342px 0 344px;
+    display: flex;
+    justify-content: space-between;
+    > li {
+      > button {
+        @include font-property("Roboto", 16px, 500, #828282, 19px);
+      }
+
+      > .selected {
+        font-weight: 900;
+        color: #000000;
+      }
+    }
+  }
+}

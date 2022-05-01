@@ -1,0 +1,114 @@
+.container-main {
+  border: 2px solid $main-color;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 24px 25px 28px 25px;
+}
+
+.list-moviesinfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+}
+
+.movieinfo {
+  width: 220px;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid $main-color;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+  background-color: white;
+
+  > img:first-child {
+    margin: 18px 19px 11px;
+    width: 180px;
+    height: 250px;
+    border: 1px solid $main-color;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+  > .text-title {
+    margin: 0 19px 12px;
+    display: block;
+    @include font-property("Noto Sans KR", 16px, 900, black, 23px);
+  }
+
+  .list-movieinfo_details {
+    margin: 0 19px 15px;
+  }
+}
+
+.movieinfo .list-movieinfo_details dl,
+.list-movieinfo_details dt,
+.list-movieinfo_details dd {
+  display: inline;
+  @include font-property("Noto Sans KR", 13px, 400, black, 19px);
+  text-align: center;
+}
+
+.list-movieinfo_details dt {
+  color: #828282;
+}
+
+.list-movieinfo_details {
+  li {
+    &:first-child {
+      display: inline-block;
+    }
+
+    &:nth-child(2) {
+      float: right;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 5px;
+    }
+  }
+}
+
+.text-grade::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background: {
+    image: url(../../images/star-image.png);
+    repeat: no-repeat;
+  }
+  vertical-align: top;
+  margin: 1px 1px 0 2px;
+}
+
+.buttons-movieinfo {
+  > button:first-child {
+    padding: 11px 28px 12px 31px;
+    border-top: 1px solid $main-color;
+    border-right: 1px solid $main-color;
+    border-radius: 0 0 0 10px;
+  }
+
+  > button:last-child {
+    padding: 11px 30px 10px 29px;
+    border-top: 1px solid $main-color;
+    border-radius: 0 0 0 10px;
+    margin-left: -4px;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      background: {
+        image: url(../../images/movie_list/icon-play.png);
+        size: cover;
+      }
+      width: 15px;
+      height: 15px;
+      vertical-align: top;
+      margin-right: 2px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+$main-color: #bdbdbd;
+
+@mixin font-property($family, $size, $weight, $color: black, $height: $size) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  line-height: $size;
+}

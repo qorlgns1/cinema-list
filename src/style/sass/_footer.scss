@@ -1,0 +1,65 @@
+.wrapper-footer {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  overflow: hidden;
+  min-width: 1060px;
+}
+
+.container-footer {
+  padding-top: 53px;
+  padding-bottom: 38px;
+  margin: 0 auto;
+  max-width: 1189px;
+
+  h2 {
+    display: inline-block;
+    @include font-property("Roboto", 22px, 700, black, 26px);
+  }
+}
+
+.list-icon {
+  display: inline-flex;
+  float: right;
+  gap: 21px;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.container-footer {
+  hr {
+    margin-top: 42px;
+    margin-bottom: 36px;
+    width: 1189px;
+  }
+
+  > .list-companyinfo {
+    float: left;
+  }
+
+  > span {
+    float: right;
+  }
+
+  > .list-companyinfo {
+    li,
+    dt,
+    dd {
+      display: inline-block;
+    }
+
+    > li > dl::after {
+      display: inline-block;
+      content: "";
+      width: 1px;
+      height: 16px;
+      border-right: 1px solid #4f4f4f;
+      vertical-align: top;
+      margin-top: -2px;
+      margin-left: 8px;
+      margin-right: 8px;
+    }
+  }
+}

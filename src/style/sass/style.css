@@ -1,0 +1,398 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: inherit;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.font-bold-700 {
+  font-weight: 700;
+}
+
+#app {
+  margin: 86px auto;
+  padding: 39px 26px 29px 27px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #f2f2f2;
+  width: 1060px;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+}
+
+.container-header > h1 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  line-height: 24px;
+  text-align: center;
+}
+
+.container-header > h1::after {
+  content: "";
+  display: block;
+  margin: 36px auto 27px;
+  width: 650px;
+  border-top: 2px solid #bdbdbd;
+}
+
+.container-header .list-selectmovies {
+  margin-bottom: 28px;
+  padding: 0 342px 0 344px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container-header .list-selectmovies > li > button {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  color: #828282;
+  line-height: 16px;
+}
+
+.container-header .list-selectmovies > li > .selected {
+  font-weight: 900;
+  color: #000000;
+}
+
+.container-main {
+  border: 2px solid #bdbdbd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 24px 25px 28px 25px;
+}
+
+.list-moviesinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 23px;
+}
+
+.movieinfo {
+  width: 220px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #bdbdbd;
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+  background-color: white;
+}
+
+.movieinfo > img:first-child {
+  margin: 18px 19px 11px;
+  width: 180px;
+  height: 250px;
+  border: 1px solid #bdbdbd;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+.movieinfo > .text-title {
+  margin: 0 19px 12px;
+  display: block;
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  font-weight: 900;
+  color: black;
+  line-height: 16px;
+}
+
+.movieinfo .list-movieinfo_details {
+  margin: 0 19px 15px;
+}
+
+.movieinfo .list-movieinfo_details dl,
+.list-movieinfo_details dt,
+.list-movieinfo_details dd {
+  display: inline;
+  font-family: "Noto Sans KR";
+  font-size: 13px;
+  font-weight: 400;
+  color: black;
+  line-height: 13px;
+  text-align: center;
+}
+
+.list-movieinfo_details dt {
+  color: #828282;
+}
+
+.list-movieinfo_details li:first-child {
+  display: inline-block;
+}
+
+.list-movieinfo_details li:nth-child(2) {
+  float: right;
+}
+
+.list-movieinfo_details li:nth-child(3), .list-movieinfo_details li:nth-child(4) {
+  margin-top: 5px;
+}
+
+.text-grade::after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-image: url(../../images/star-image.png);
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 1px 1px 0 2px;
+}
+
+.buttons-movieinfo > button:first-child {
+  padding: 11px 28px 12px 31px;
+  border-top: 1px solid #bdbdbd;
+  border-right: 1px solid #bdbdbd;
+  border-radius: 0 0 0 10px;
+}
+
+.buttons-movieinfo > button:last-child {
+  padding: 11px 30px 10px 29px;
+  border-top: 1px solid #bdbdbd;
+  border-radius: 0 0 0 10px;
+  margin-left: -4px;
+}
+
+.buttons-movieinfo > button:last-child::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../../images/movie_list/icon-play.png);
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  vertical-align: top;
+  margin-right: 2px;
+}
+
+.wrapper-footer {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  overflow: hidden;
+  min-width: 1060px;
+}
+
+.container-footer {
+  padding-top: 53px;
+  padding-bottom: 38px;
+  margin: 0 auto;
+  max-width: 1189px;
+}
+
+.container-footer h2 {
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+  line-height: 22px;
+}
+
+.list-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: right;
+  gap: 21px;
+}
+
+.list-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.container-footer hr {
+  margin-top: 42px;
+  margin-bottom: 36px;
+  width: 1189px;
+}
+
+.container-footer > .list-companyinfo {
+  float: left;
+}
+
+.container-footer > span {
+  float: right;
+}
+
+.container-footer > .list-companyinfo li,
+.container-footer > .list-companyinfo dt,
+.container-footer > .list-companyinfo dd {
+  display: inline-block;
+}
+
+.container-footer > .list-companyinfo > li > dl::after {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 16px;
+  border-right: 1px solid #4f4f4f;
+  vertical-align: top;
+  margin-top: -2px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
